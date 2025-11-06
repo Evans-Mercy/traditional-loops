@@ -38,7 +38,7 @@ public class Program {
             System.out.println(person.getFirstName() + " " + person.getLastName());
         }
 
-        //average, oldest, youngests
+        //average, oldest, youngest
         int totalAge = 0;
         int oldest = people.get(0).getAge();
         int youngest = people.get(0).getAge();
