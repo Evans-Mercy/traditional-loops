@@ -8,26 +8,16 @@ public class Program {
 
         //list of 10 people
         ArrayList<Person> people = new ArrayList<>();
-        Person p1 = new Person("Tommy", "Shelby", 30);
-        people.add(p1);
-        Person p2 = new Person("Authur", "Shelby", 35);
-        people.add(p2);
-        Person p3 = new Person("Finn", "Shelby", 18);
-        people.add(p3);
-        Person p4 = new Person("Michael", "Gray", 22);
-        people.add(p4);
-        Person p5 = new Person("Polly", "Gray", 42);
-        people.add(p5);
-        Person p6 = new Person("John", "Shelby", 28);
-        people.add(p6);
-        Person p7 = new Person("Charlie", "Strong", 43);
-        people.add(p7);
-        Person p8 = new Person("Grace", "Shelby", 28);
-        people.add(p8);
-        Person p9 = new Person("Ada", "Thorne", 25);
-        people.add(p9);
-        Person p10 = new Person("Ada", "Shelby", 24);
-        people.add(p10);
+        people.add(new Person("Tommy", "Shelby", 30));
+        people.add(new Person("Authur", "Shelby", 35));
+        people.add(new Person("Finn", "Shelby", 18));
+        people.add(new Person("Michael", "Gray", 22));
+        people.add(new Person("Polly", "Gray", 42));
+        people.add(new Person("John", "Shelby", 28));
+        people.add(new Person("Charlie", "Strong", 43));
+        people.add(new Person("Grace", "Shelby", 28));
+        people.add(new Person("Ada", "Thorne", 25));
+        people.add(new Person("Ada", "Shelby", 24));
 
         //prompt user for a name
         Scanner scanner = new Scanner(System.in);
@@ -48,7 +38,7 @@ public class Program {
             System.out.println(person.getFirstName() + " " + person.getLastName());
         }
 
-        //average, oldest, youngest
+        //average, oldest, youngests
         int totalAge = 0;
         int oldest = people.get(0).getAge();
         int youngest = people.get(0).getAge();
